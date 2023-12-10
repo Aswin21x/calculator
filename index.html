@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./cal.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="title">CALCULATOR</h1>
+    <br>
+    <div>
+    <input id="result" type="text" class="inn"/>
+  </div>
+    <br>
+    <div class="buttons ">
+      <button onclick=" allclr()"class="operator" data-value="AC">AC</button>
+      <button onclick=" backs()" class="operator" data-value="backspace">&#9003;</button>
+      <!-- <button class="operator" data-value=""></button> -->
+      <br>
+      <button onclick="displayData('/')"class="operator" data-value="/">/</button>
+      <button onclick="displayData(7)" data-value="7">7</button>
+      <button onclick="displayData(8)"data-value="8">8</button>
+      <button onclick="displayData(6)"data-value="9">9</button>
+      <button onclick="displayData('*')"class="operator" data-value="*">*</button>
+      <button onclick="displayData(4)"data-value="4">4</button>
+      <button onclick="displayData(5)"data-value="5">5</button>
+      <button onclick="displayData(6)"data-value="6">6</button>
+      <button onclick="displayData('-')"class="operator" data-value="-">-</button>
+      <button onclick="displayData(1)"data-value="1">1</button>
+      <button onclick="displayData(2)"data-value="2">2</button>
+      <button onclick="displayData(3)"data-value="3">3</button>
+      <button onclick="displayData('+')" class="operator" data-value="+">+</button>
+      <br>
+      <button onclick="displayData(0)"data-value="0">0</button>
+    
+      <br>
+      <button class="operator" onclick="output()" data-value="=">=</button>
+    </div>
+  </div>
+</body>
+<script src="./calc.js"></script>
+</html>
